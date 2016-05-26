@@ -7,7 +7,7 @@
 	            <div class="span12">
 
 	                <!-- category page title -->
-	                <h1 class="title">
+	                <h1 class="breadcrumbs">
 
 	                	<?php if(function_exists('bcn_display')){
 	                		bcn_display();

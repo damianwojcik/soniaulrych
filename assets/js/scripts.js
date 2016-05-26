@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 	function mobile_menu(){
 
 		var btn = $('#menu-toggle, .sidebar-btn'),
-			menu = $('.menu-primary'),
+			menu = $('.menu-primary');
 			mobile_menu = $('#mobile-menu');
 
 		btn.on('click', function(){
@@ -44,24 +44,18 @@ jQuery(document).ready(function($) {
 			sidebar_menu.toggleClass('visible');
 		});
 
+
 		mobile_menu.find('li.menu-item-has-children').each(function(){
 			$(this).prepend('<span class="nav-more">+</span>');
 		});
 
-		// var nav_more = $('.nav-more');
-		// nav_more.on('click', function(){
-		// 	$(this).siblings('ul.sub-menu').toggleClass('visible').slideToggle();
-
-
-		$(".nav-more").click(function() {
-				$(".sub-menu").stop().slideToggle(500);
+		var nav_more = $('.nav-more');
+		nav_more.on('click', function(){
+			$(this).siblings('ul.sub-menu').toggleClass('active').slideToggle();
 		});
+
 
 	}
 
 
 });
-//
-// $(".menu-toggle").click(function() {
-// 		$(".mobile-nav").stop().slideToggle(500);
-// });

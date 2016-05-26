@@ -4,6 +4,10 @@
 		width: 90%;
 	}
 
+	.container .container{
+		width: 100%;
+	}
+
 	header .row .span10{
 		display: none;
 	}
@@ -86,6 +90,11 @@
 		line-height: 1.2;
 	}
 
+	.section-title h1.breadcrumbs{
+		line-height: 28px;
+		font-size: 13px;
+	}
+
 	.section-about .span4{
 		width: 100%;
 		text-align: center;
@@ -161,6 +170,16 @@
 
 	.facebook-plugin{
 		margin: 0 auto;
+	}
+
+	.blog_sidebar{
+		padding-top: 20px;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	ul.article-tiles{
+		padding-right: 0;
 	}
 
 }

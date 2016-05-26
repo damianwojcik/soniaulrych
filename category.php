@@ -10,7 +10,7 @@
 
                 <div class="span12">
 
-                    <h1 class="title">
+                    <h1 class="breadcrumbs">
 
                         <?php if(function_exists('bcn_display')){
 

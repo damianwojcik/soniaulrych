@@ -31,6 +31,7 @@
     </div>
 
 </div>
+<!-- END section title -->
 
 
 <main>

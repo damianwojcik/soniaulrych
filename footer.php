@@ -77,8 +77,6 @@
 
 <!-- End Document
 ================================================== -->
-<script src="<?= THEME_URL; ?>/assets/js/scripts.js"></script>
-
 <?php wp_footer(); ?>
 </body>
 </html>
