@@ -56,7 +56,13 @@
 
 							$image = get_sub_field('image'); ?>
 
-								<a href="<?php echo get_category_link( 2 ); ?>" class="item" style="background-image: url('<?php echo $image['url']; ?>"></a>
+								<a href="<?php echo get_category_link( 2 ); ?>" class="item" style="background-image: url('<?php echo $image['url']; ?>">
+
+									<div class="btn">
+											Zobacz więcej
+									</div>
+
+								</a>
 
 							<?php
 
@@ -108,15 +114,11 @@
 
 				<div class="span4">
 
-					<a href="<?php echo get_page_link(32); ?>">
+					<a href="<?php echo get_page_link(32); ?>" class="circle-wrap">
 
-						<div class="circle-wrap">
+						<div class="circle-wrap-img" style="background-image: url('<?php echo $image['url']; ?>');">
 
-							<div class="circle-wrap-img" style="background-image: url('<?php echo $image['url']; ?>');">
-
-								<div class="circle-wrap-overlay"></div>
-
-							</div>
+							<div class="circle-wrap-overlay"></div>
 
 						</div>
 

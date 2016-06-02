@@ -80,7 +80,7 @@ p a,
 p a:visited{
     color: #FF3939;
     font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 16px;
+    font-size: inherit;
 }
 
 p a:hover{
@@ -400,6 +400,7 @@ ul.recent-posts li a:hover{
     buttons
 --------------------------------------------------------------- */
 .btn,
+.btn:hover,
 input.btn,
 input.btn:hover,
 a.btn,
@@ -427,6 +428,7 @@ input[type="submit"]:hover{
     transition: all 0.4s ease;
 }
 
+.btn:hover,
 input.btn:hover,
 a.btn:hover,
 input[type="submit"]:hover{
@@ -435,13 +437,13 @@ input[type="submit"]:hover{
 
 .btn.sidebar-btn,
 .btn.sidebar-btn:hover{
-    padding: 13px 25px 13px 45px;
+    padding: 12px 20px 12px 40px;
     background: #FF3939;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .btn.sidebar-btn:hover{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .btn.sidebar-btn:after{
@@ -520,10 +522,6 @@ header .container{
     -ms-transition: opacity 0.6s ease;
     -o-transition: opacity 0.6s ease;
     transition: opacity 0.4s ease;
-    -webkit-transition-delay: 600ms;
-    -moz-transition-delay: 600ms;
-    -o-transition-delay: 600ms;
-    transition-delay: 400ms;
 }
 
 #primary-menu ul ul li{
@@ -661,7 +659,6 @@ header .container{
 --------------------------------------------------------------- */
 .section-title{
     text-align: left;
-    margin-bottom: 30px;
     background: #FFF;
 }
 
@@ -749,17 +746,32 @@ header .container{
 }
 
 .section-slider .container{
-    padding: 20px 0 25px 0;
+    padding: 45px 0 30px 0;
     border-bottom: 1px solid #eee;
     display: table;
     table-layout: fixed;
+}
+
+.section-slider .btn,
+.section-slider .btn:hover{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 0;
+	background: #444;
+}
+
+.section-slider .btn:hover{
+	background: #FF3939;
 }
 
 .owl-carousel{
     width: 100%;
     position: relative;
 }
+
 .owl-carousel .item{
+		position: relative;
     height: 400px;
     display: block;
     background-size: cover;
@@ -769,7 +781,7 @@ header .container{
 }
 
 .owl-theme .owl-controls{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .owl-carousel .owl-nav{
@@ -832,7 +844,11 @@ header .container{
 .section-category{
     display: table;
     width: 100%;
-    padding: 10px 0 30px 0;
+    padding: 0;
+}
+
+.section-category .container{
+	padding: 0;
 }
 
 .section-category .category-item-meta{
@@ -896,7 +912,8 @@ header .container{
     section-contact-panel
 --------------------------------------------------------------- */
 .section-contact-panel{
-    margin-bottom: 20px;
+    display: table;
+		width: 100%;
 }
 
 .section-contact-panel .container{
@@ -923,7 +940,7 @@ header .container{
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    padding: 40px 20px 40px 40px;
+    padding: 40px 20px 0px 40px;
 }
 
 .section-about .span8 .wrap h3{
@@ -954,7 +971,7 @@ footer{
 }
 
 footer .container{
-    padding: 45px 0;
+    padding: 40px 0 30px 0;
 }
 
 .banners ul li img{
@@ -1028,7 +1045,27 @@ footer p.copy a:hover{
 main{
     display: table;
     width: 100%;
-    margin-bottom: 45px;
+}
+
+main .container{
+	padding: 35px 0 45px 0;
+}
+
+.single-post main .container{
+	padding-top: 0;
+}
+
+.single-post .gallery .container{
+	padding-top: 35px;
+}
+
+.single-format-standard main .container main .container{
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+
+#wc-comment-header{
+	padding-top: 35px !important;
 }
 
 main h2,
@@ -1050,7 +1087,7 @@ main h3{
 }
 
 .circle-wrap{
-    display: inline-block;
+    display: table;
 		padding: 10px;
     background: #676767;
     z-index: 1;
@@ -1229,6 +1266,11 @@ ul.article-tiles li{
 
 ul.article-tiles li:last-child{
 	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.nav-previous.alignleft{
+	margin: 0;
 }
 
 ul.article-tiles li h3 a,
@@ -1461,4 +1503,9 @@ a.read-more:hover{
 
 #wc-comment-header{
 	padding-top: 35px;
+}
+
+#wpcomm{
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
