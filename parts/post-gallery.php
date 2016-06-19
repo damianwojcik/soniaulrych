@@ -1,3 +1,8 @@
+<?php
+	$categories = get_the_category();
+	$category_id = $categories[0]->cat_ID;
+?>
+
 	<div class="section-title">
 
 	    <div class="container">
@@ -39,7 +44,38 @@
 
 			<?php if (!empty($images)) : ?>
 
+				<?php $i = 1 ?>
+
 				<?php foreach ($images as $image) : ?>
+
+					<?php if( $category_id == '6'  ) { ?>
+
+						<a href="<?= $image['sizes']['huge']; ?>" rel="lightbox">
+
+			                <div class="category-item">
+
+			                    <div class="category-item-image" style="background-image: url(<?= $image['sizes']['large']; ?>);">
+
+			                        <div class="item-overlay">
+
+			                            <img src="<?= THEME_URL; ?>/assets/images/icons/icon-zoom.png" alt="Zobacz zdjęcie">
+
+			                        </div>
+
+			                    </div>
+
+			                    <div class="category-item-meta">
+
+			                        <h2><?php echo $i; ?></h2>
+
+			                    </div>
+
+			                </div>
+
+			            </a>
+
+						<?php $i = $i + 1 ?>
+					<?php } else {?>
 
 					<a href="<?= $image['sizes']['huge']; ?>" rel="lightbox">
 
@@ -58,6 +94,8 @@
 			            </div>
 
 				    </a>
+
+					<?php } //endif ?>
 
 				<?php endforeach; ?>
 
