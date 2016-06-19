@@ -280,7 +280,7 @@ ul.recent-posts li a:hover{
 --------------------------------------------------------------- */
 .sidebar-menu{
     position: absolute;
-    right: 0;
+    right: -320px;
     top: 0;
     bottom: 0;
     width: 320px;
@@ -290,6 +290,12 @@ ul.recent-posts li a:hover{
     padding: 35px 45px;
     border: 0;
     box-shadow: none;
+	display: none;
+}
+
+.sidebar-menu.opened{
+    right: 0;
+    display: block;
 }
 
 .sidebar-menu #mobile-menu{
