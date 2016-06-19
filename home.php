@@ -10,7 +10,7 @@
 
 	            	<?php
 	            	$page_title = get_field('title_h1', 'option');
-								$page_subtitle = get_field('title_h1_small', 'option');?>
+					$page_subtitle = get_field('title_h1_small', 'option');?>
 
 	            	<!-- standard page title (ACF) -->
 	            	<?php if( !empty($page_title) ): ?>
@@ -184,13 +184,15 @@
 						$title = get_sub_field('title');
 						$image = get_sub_field('image');
 						$content = get_sub_field('content');
+						$link = get_sub_field('link');
 
 						?>
 
 				<div class="span3">
 
 					<article>
-						<a href="#" target="_self">
+
+						<a href="<?php echo $link; ?>" target="_self">
 
 							<h2><?php echo $title; ?></h2>
 
@@ -201,6 +203,7 @@
 							</p>
 
 						</a>
+
 					</article>
 
 				</div>

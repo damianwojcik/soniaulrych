@@ -50,7 +50,7 @@
 				<!-- date -->
 				<div class="post-meta">
 
-					<div class="date">
+					<div class="date_block">
 						<span class="month"><?php echo $month; ?></span>
 						<span class="day"><?php echo $day; ?></span>
 						<span class="month"><?php echo $year; ?></span>
@@ -73,7 +73,7 @@
 
 				<?php the_content(); ?>
 
-				<?php comments_template(); ?> 
+				<?php comments_template(); ?>
 
 			</div>
 

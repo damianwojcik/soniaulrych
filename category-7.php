@@ -45,10 +45,10 @@
 						$comments_num = get_comments_number();
 						$comments_link = get_comments_link();
 						$content = get_the_content();
-            apply_filters('the_content', $content);
-            $content = str_replace(']]>', ']]&gt;', $content);
-            $content = apply_filters('the_content', $content);
-			      $trimmed_content = wp_trim_words( $content, 50 );
+                apply_filters('the_content', $content);
+                $content = str_replace(']]>', ']]&gt;', $content);
+                $content = apply_filters('the_content', $content);
+    			      $trimmed_content = wp_trim_words( $content, 50 );
 
 			    ?>
 
@@ -61,7 +61,7 @@
 						<!-- date -->
 						<div class="post-meta">
 
-							<div class="date">
+							<div class="date_block">
 								<span class="month"><?php echo $month; ?></span>
 								<span class="day"><?php echo $day; ?></span>
 								<span class="month"><?php echo $year; ?></span>

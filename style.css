@@ -1088,7 +1088,7 @@ main h3{
 
 .circle-wrap{
     display: table;
-		padding: 10px;
+	padding: 10px;
     background: #676767;
     z-index: 1;
     -webkit-transition: all 0.4s ease;
@@ -1107,12 +1107,23 @@ main h3{
     background-repeat: no-repeat;
     z-index: 100;
     position: relative;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.circle-wrap:hover .circle-wrap-img{
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+	filter: grayscale(0%);
 }
 
 .circle-wrap-overlay{
     background-color: rgba(255, 255, 255, 0.2);
     bottom: 0;
-    display: block;
+    /*display: block;*/
+	display: none;
     height: 100%;
     left: 0;
     margin: auto;
@@ -1127,15 +1138,6 @@ main h3{
     transition: transform 0.4s ease, opacity 0.8s ease;
     width: 100%;
     z-index: 100;
-}
-
-.circle-wrap:hover{
-    background: #d6d6d6;
-
-}
-
-.circle-wrap-overlay:hover{
-    opacity: 1;
 }
 
 
@@ -1238,7 +1240,7 @@ span.contact-details a{
 /*facebook plugin*/
 .facebook-plugin{
 	display: block;
-	margin: 0 auto 30px auto;
+	margin: 0 0 30px 0;
 }
 
 
@@ -1293,7 +1295,7 @@ ul.article-tiles li h3 a:hover{
 	width: 100%;
 }
 
-.date,
+.date_block,
 a.comments_link{
 	display: table;
 	float: left;
@@ -1302,7 +1304,7 @@ a.comments_link{
 	text-align: center;
 }
 
-.date{
+.date_block{
 	padding: 8px 0;
 	display: block;
 	background: #FF3939;
@@ -1340,18 +1342,18 @@ a.comments_link:hover span{
 	color: #FFF;
 }
 
-.date .month,
-.date .day{
+.date_block .month,
+.date_block .day{
 	display: block;
 	color: #FFF;
 }
 
-.date .month{
+.date_block .month{
 	font-size: 13px;
 	line-height: 11px;
 }
 
-.date .day{
+.date_block .day{
 	font-size: 27px;
 	letter-spacing: 0px;
 	margin-top: 2px;

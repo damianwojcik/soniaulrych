@@ -8,12 +8,7 @@
 
             <div class="span12">
 
-                <h1 class="title">BLOG<?php if(is_date()){
-                    echo ': ';
-                    single_month_title(' ');
-                }?></h1>
-
-                <small>Najnowsze wiadomości z mojego świata</small>
+                <h1 class="title"><?php single_tag_title('Tag: '); ?></h1>
 
             </div>
 
@@ -40,22 +35,20 @@
 
 			    <?php
 
-                    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
-                    $title = get_the_title();
-                    $day = get_the_date('d');
-                    $month = get_the_date('M');
-                    $year = get_the_date('o');
-                    $comments_num = get_comments_number();
-                    $comments_link = get_comments_link();
-                    $content = get_the_content();
-                    apply_filters('the_content', $content);
-                    $content = str_replace(']]>', ']]&gt;', $content);
-                    $content = apply_filters('the_content', $content);
-                    $trimmed_content = wp_trim_words( $content, 50 );
+			      $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+			      $title = get_the_title();
+						$day = get_the_date('d');
+						$month = get_the_date('M');
+						$year = get_the_date('o');
+						$comments_num = get_comments_number();
+						$comments_link = get_comments_link();
+						$content = get_the_content();
+                apply_filters('the_content', $content);
+                $content = str_replace(']]>', ']]&gt;', $content);
+                $content = apply_filters('the_content', $content);
+    			      $trimmed_content = wp_trim_words( $content, 50 );
 
 			    ?>
-
-                <?php if(!(has_post_format( 'gallery' ))){ ?>
 
 					<!-- single article -->
 			    <li>
@@ -66,7 +59,7 @@
 						<!-- date -->
 						<div class="post-meta">
 
-							<div class="date_block">
+							<div class="date">
 								<span class="month"><?php echo $month; ?></span>
 								<span class="day"><?php echo $day; ?></span>
 								<span class="month"><?php echo $year; ?></span>
@@ -99,8 +92,6 @@
 			      <a href="<?php the_permalink(); ?>" class="read-more">Czytaj dalej...</a>
 
 			    </li>
-
-                <?php } //endif ?>
 
 			  <?php endwhile; ?>
 
