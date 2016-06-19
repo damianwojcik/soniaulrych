@@ -25,11 +25,11 @@
 
                 <div class="category-item">
 
-                    <div class="category-item-image" style="background-image: url(<?= $featured_image['sizes']['large']; ?>);">
+                    <div class="category-item-image b-lazy" data-src="<?= $featured_image['sizes']['large']; ?>">
 
                         <div class="item-overlay">
 
-                            <img src="<?= THEME_URL; ?>/assets/images/icons/icon-gallery.png" alt="Zobacz galerię">
+                            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-gallery.png" alt="Zobacz galerię">
 
                         </div>
 

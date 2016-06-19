@@ -35,18 +35,18 @@
 
 			    <?php
 
-			      $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
-			      $title = get_the_title();
-						$day = get_the_date('d');
-						$month = get_the_date('M');
-						$year = get_the_date('o');
-						$comments_num = get_comments_number();
-						$comments_link = get_comments_link();
-						$content = get_the_content();
+                $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+                $title = get_the_title();
+                $day = get_the_date('d');
+                $month = get_the_date('M');
+                $year = get_the_date('o');
+                $comments_num = get_comments_number();
+                $comments_link = get_comments_link();
+                $content = get_the_content();
                 apply_filters('the_content', $content);
                 $content = str_replace(']]>', ']]&gt;', $content);
                 $content = apply_filters('the_content', $content);
-    			      $trimmed_content = wp_trim_words( $content, 50 );
+                $trimmed_content = wp_trim_words( $content, 50 );
 
 			    ?>
 
@@ -75,8 +75,8 @@
 						<!-- thumbnail -->
 		        <a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-		          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?>
-								style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>></div>
+		          <div class="tile-img b-lazy"<?php if( !empty($thumbnail) ){ ?>
+					    data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>></div>
 
 		        </a>
 
@@ -115,7 +115,7 @@
 
 					<div class="sidebar-list">
 
-            <h5>Najnowsze wpisy</h5>
+                        <h5>Najnowsze wpisy</h5>
 
 						<?php
 

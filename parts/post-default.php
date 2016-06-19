@@ -64,8 +64,8 @@
 				</div>
 
 				<!-- thumbnail -->
-					<div class="full-width-img"<?php if( !empty($thumbnail) ){ ?>
-						style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>></div>
+					<div class="full-width-img b-lazy"<?php if( !empty($thumbnail) ){ ?>
+						data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>></div>
 
 				<!-- tags list -->
 				<h5>Tagi:</h5>

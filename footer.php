@@ -12,7 +12,7 @@
 					<h4>Foto Soul</h4>
 
 					<a href="<?=SITE_URL?>" class="footer-logo">
-						<img src="<?= THEME_URL; ?>/assets/images/logo.png" />
+						<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/logo.png" alt="Foto Soul">
 					</a>
 
 					<?php
@@ -21,8 +21,12 @@
 					?>
 
 					<ul class="social-icons">
-						<li><a href="<?php echo $url_facebook; ?>"><img src="<?= THEME_URL; ?>/assets/images/icons/icon-facebook.png" alt="Facebook"></a></li>
-						<li><a href="<?php echo $url_instagram; ?>"><img src="<?= THEME_URL; ?>/assets/images/icons/icon-instagram.png" alt="Instagram"></a></li>
+						<li><a href="<?php echo $url_facebook; ?>">
+							<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-facebook.png" alt="Facebook">
+						</a></li>
+						<li><a href="<?php echo $url_instagram; ?>">
+							<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-instagram.png" alt="Instagram">
+						</a></li>
 					</ul>
 
 				</div>

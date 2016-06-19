@@ -116,7 +116,7 @@
 
 					<a href="<?php echo get_page_link(32); ?>" class="circle-wrap">
 
-						<div class="circle-wrap-img" style="background-image: url('<?php echo $image['url']; ?>');">
+						<div class="circle-wrap-img b-lazy" data-src="<?php echo $image['url']; ?>">
 
 							<div class="circle-wrap-overlay"></div>
 
@@ -196,7 +196,7 @@
 
 							<h2><?php echo $title; ?></h2>
 
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+							<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
 							<p>
 								<?php echo $content; ?>

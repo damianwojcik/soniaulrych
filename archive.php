@@ -34,7 +34,7 @@
 
 				<ul class="article-tiles">
 
-			  <?php if ( have_posts() ) : ?>
+                <?php if ( have_posts() ) : ?>
 
 			    <?php while ( have_posts() ) : the_post();  ?>
 
@@ -58,7 +58,7 @@
                 <?php if(!(has_post_format( 'gallery' ))){ ?>
 
 					<!-- single article -->
-			    <li>
+	                <li>
 
 						<!-- title -->
 						<h3><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h3>
@@ -80,12 +80,12 @@
 						</div>
 
 						<!-- thumbnail -->
-		        <a href="<?php the_permalink(); ?>" class="tile-img-link">
+        		        <a href="<?php the_permalink(); ?>" class="tile-img-link">
 
-		          <div class="tile-img"<?php if( !empty($thumbnail) ){ ?>
-								style="background-image: url(<?php echo $thumbnail[0]; ?>)" <?php } ?>></div>
+        		          <div class="tile-img b-lazy"<?php if( !empty($thumbnail) ){ ?>
+        				    data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>></div>
 
-		        </a>
+        		        </a>
 
 						<!-- tags list -->
 						<h5>Tagi:</h5>
@@ -124,7 +124,7 @@
 
 					<div class="sidebar-list">
 
-            <h5>Najnowsze wpisy</h5>
+                        <h5>Najnowsze wpisy</h5>
 
 						<?php
 

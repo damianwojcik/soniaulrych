@@ -54,11 +54,11 @@
 
 			                <div class="category-item">
 
-			                    <div class="category-item-image" style="background-image: url(<?= $image['sizes']['large']; ?>);">
+			                    <div class="category-item-image b-lazy" data-src="<?= $image['sizes']['large']; ?>">
 
 			                        <div class="item-overlay">
 
-			                            <img src="<?= THEME_URL; ?>/assets/images/icons/icon-zoom.png" alt="Zobacz zdjęcie">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-zoom.png" alt="Zobacz zdjęcie">
 
 			                        </div>
 
@@ -81,11 +81,11 @@
 
 			            <div class="gallery-item">
 
-			                <div class="gallery-item-image" style="background-image: url(<?= $image['sizes']['large']; ?>);">
+			                <div class="gallery-item-image b-lazy" data-src="<?= $image['sizes']['large']; ?>">
 
 			                    <div class="item-overlay">
 
-                            		<img src="<?= THEME_URL; ?>/assets/images/icons/icon-zoom.png" alt="Zobacz zdjęcie">
+									<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-zoom.png" alt="Zobacz zdjęcie">
 
                        			 </div>
 

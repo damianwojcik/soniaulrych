@@ -11,7 +11,7 @@
 
             	<?php
             		$page_title = get_field('page_title');
-					      $page_subtitle = get_field('page_subtitle');?>
+				    $page_subtitle = get_field('page_subtitle');?>
 
             	<!-- standard page title (ACF) -->
             	<?php if( !empty($page_title) ): ?>

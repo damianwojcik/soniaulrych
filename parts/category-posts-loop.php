@@ -21,20 +21,19 @@
 
 	                <div class="category-item">
 
-	                    <div class="category-item-image" style="background-image: url('<?php echo $featured_image[0]; ?>');">
+	                    <div class="category-item-image b-lazy" data-src="<?php echo $featured_image[0]; ?>">
 
 	                        <div class="item-overlay">
 
 	                        	<?php if( is_category( '6' ) ) { ?>
 
-	                        	<img src="<?= THEME_URL; ?>/assets/images/icons/icon-locked.png" alt="Zobacz galerię">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-locked.png" alt="Zobacz galerię">
 
 	                        	<?php
-	                        	}
-	                        	else{
+	                        	}else{
 	                        	?>
 
-                            	<img src="<?= THEME_URL; ?>/assets/images/icons/icon-gallery.png" alt="Zobacz galerię">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?= THEME_URL; ?>/assets/images/icons/icon-gallery.png" alt="Zobacz galerię">
 
                             	<?php } ?>
 
@@ -59,15 +58,7 @@
 <?php else: ?>
 
 
-		<div class="content-placeholder">
-
-			<a href="<?= SITE_URL; ?>/media" class="content-placeholder-wrap" title="Media">
-
-				Materiały pojawią się niebawem, zdjęcia dla prasy dostępne w zakładce <span>Media</span>
-
-			</a>
-
-		</div>
+		<h2>Brak materiałów do wyświetlenia.</h2>
 
 
 <?php endif; ?>
