@@ -80,7 +80,7 @@ $url_instagram = get_field('url_instagram', 'option');
 
     <div class="row">
 
-      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.2151597453017!2d18.995337015719393!3d50.119695679431125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716c806e6f25f67%3A0xd1289ed2b06587f4!2sEstkowskiego%2C+Tychy!5e0!3m2!1spl!2spl!4v1461006040381" width="100%" height="300" frameborder="0" style="border:0 width:100%;" allowfullscreen></iframe>
+    	<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103122.14625248754!2d18.960802142115984!3d50.12833977285708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716c806e6f25f67%3A0xd1289ed2b06587f4!2sEstkowskiego%2C+Tychy!5e0!3m2!1spl!2spl!4v1471164743908" width="100%" height="300" frameborder="0" style="border:0 width:100%;" allowfullscreen></iframe>
 
     </div>
 

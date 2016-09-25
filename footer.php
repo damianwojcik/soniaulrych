@@ -64,7 +64,7 @@
 					<h4>Autor</h4>
 
 					<p class="copy">
-						Wykonał &#169; 2016 <a href="https://www.facebook.com/khamian">khamian</a><br/>
+						Wykonał &#169; 2016 <a target="_blank" href="http://damianwojcik.it/">damianwojcik.IT</a><br/>
 					 	Wszelkie prawa zastrzeżone.
 					</p>
 
