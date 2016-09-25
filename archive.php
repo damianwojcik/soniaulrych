@@ -137,9 +137,14 @@
 
 							<?php
 
+							setlocale(LC_TIME, "");
+
 								foreach( $recent_posts as $recent ){
+
+									$date = strftime('%b %d %Y', strtotime($recent['post_date']));
+
 									echo '<li>';
-									echo '<span class="post-date">' . date('M d, o', strtotime($recent['post_date'])) . '</span>';
+									echo '<span class="post-date">' . $date . '</span>';
 									echo '<a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"] . '</a></li>';
 								}
 

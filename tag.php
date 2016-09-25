@@ -50,35 +50,35 @@
 
 			    ?>
 
-					<!-- single article -->
+				<!-- single article -->
 			    <li>
 
-						<!-- title -->
-						<h3><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h3>
+					<!-- title -->
+					<h3><a href="<?php the_permalink(); ?>"><?php echo $title; ?></a></h3>
 
-						<!-- date -->
-						<div class="post-meta">
+					<!-- date -->
+					<div class="post-meta">
 
-							<div class="date">
-								<span class="month"><?php echo $month; ?></span>
-								<span class="day"><?php echo $day; ?></span>
-								<span class="month"><?php echo $year; ?></span>
-							</div>
-
-							<a href="<?php echo $comments_link; ?>" class="comments_link">
-								<span><?php echo $comments_num; ?></span>
-								<span>Komentarzy</span>
-							</a>
-
+						<div class="date_block">
+							<span class="month"><?php echo $month; ?></span>
+							<span class="day"><?php echo $day; ?></span>
+							<span class="month"><?php echo $year; ?></span>
 						</div>
 
-						<!-- thumbnail -->
-		        <a href="<?php the_permalink(); ?>" class="tile-img-link">
+						<a href="<?php echo $comments_link; ?>" class="comments_link">
+							<span><?php echo $comments_num; ?></span>
+							<span>Komentarzy</span>
+						</a>
 
-		          <div class="tile-img b-lazy"<?php if( !empty($thumbnail) ){ ?>
-					    data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>></div>
+					</div>
 
-		        </a>
+							<!-- thumbnail -->
+			        <a href="<?php the_permalink(); ?>" class="tile-img-link">
+
+			          <div class="tile-img b-lazy"<?php if( !empty($thumbnail) ){ ?>
+						    data-src="<?php echo $thumbnail[0]; ?>" <?php } ?>></div>
+
+			        </a>
 
 						<!-- tags list -->
 						<h5>Tagi:</h5>
