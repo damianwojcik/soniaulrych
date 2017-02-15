@@ -55,7 +55,6 @@
 		margin: 0;
 	}
 
-
 	h3{
 		font-size: 20px;
 		line-height: 26px;
@@ -340,6 +339,10 @@
 	.img-wrapper,
 	.single-post .full-width-img{
 		height: 320px;
+	}
+
+	.owl-carousel .item__title{
+		font-size: 35px;
 	}
 
 	.circle-wrap-img{

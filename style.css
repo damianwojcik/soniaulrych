@@ -777,7 +777,7 @@ header .container{
 }
 
 .owl-carousel .item{
-		position: relative;
+    position: relative;
     height: 400px;
     display: block;
     background-size: cover;
@@ -794,6 +794,20 @@ header .container{
     display: none;
 }
 
+.owl-carousel .item__title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 45px;
+    text-shadow: 0 0 5px #000;
+    max-width: 90%;
+    text-transform: uppercase;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
 
 /* ---------------------------------------------------------------
     section-featured
@@ -1320,12 +1334,13 @@ ul.article-tiles li h3 a:hover{
 }
 
 .date_block,
-a.comments_link{
+.comments_link{
 	display: table;
 	float: left;
 	text-transform: uppercase;
 	width: 65px;
-	text-align: center;
+	text-align: center;'
+    cursor: pointer;
 }
 
 .date_block{
@@ -1335,7 +1350,7 @@ a.comments_link{
 	color: #FFF;
 }
 
-a.comments_link span{
+.comments_link span{
 	display: block;
 	color: #bbb;
 	background: #444444;
@@ -1349,7 +1364,7 @@ a.comments_link span{
 	transition: all 0.4s ease;
 }
 
-a.comments_link span:first-child{
+.comments_link span:first-child{
 	font-size: 22px;
 	letter-spacing: 0px;
 	line-height: 27px;
@@ -1357,12 +1372,12 @@ a.comments_link span:first-child{
 	padding-top: 12px;
 }
 
-a.comments_link span:last-child{
+.comments_link span:last-child{
 	padding-top: 9px;
 	padding-bottom: 14px;
 }
 
-a.comments_link:hover span{
+.comments_link:hover span{
 	color: #FFF;
 }
 

@@ -43,39 +43,55 @@
 
 				<div class="span12">
 
-					<div class="owl-carousel">
+					<h2 class="owl-carousel">
 
-						<?php
+						<?php $args = array(
+							'posts_per_page'   => 5,
+							'category_name'    => 'blog',
+							'orderby'          => 'date',
+						);
+						$posts_array = get_posts( $args );
 
-						// check if the repeater field has rows of data
-						if( have_rows('slide', 'option') ):
+						foreach ($posts_array as $post){
+							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+							$title = get_the_title();
+							$day = get_the_date('d');
+							$month = get_the_date('M');
+							$year = get_the_date('o');
+							$comments_num = get_comments_number();
+							$comments_link = get_comments_link();
+						?>
 
-					 	// loop through the rows of data
+							<a href="<?php echo get_permalink( $post->ID ); ?>" class="item" style="background-image: url('<?php echo $image[0]; ?>')">
 
-							while ( have_rows('slide', 'option') ) : the_row();
+								<!-- date -->
+								<div class="post-meta">
 
-							$image = get_sub_field('image'); ?>
-
-								<a href="<?php echo get_category_link( 2 ); ?>" class="item" style="background-image: url('<?php echo $image['url']; ?>">
-
-									<div class="btn">
-											Zobacz więcej
+									<div class="date_block">
+										<span class="month"><?php echo $month; ?></span>
+										<span class="day"><?php echo $day; ?></span>
+										<span class="month"><?php echo $year; ?></span>
 									</div>
 
-								</a>
+									<div href="<?php echo $comments_link; ?>" class="comments_link">
+										<span><?php echo $comments_num; ?></span>
+										<span>Komentarzy</span>
+									</div>
 
-							<?php
+								</div>
 
-							endwhile;
+								<h2 class="item__title">
+									<?php echo $title; ?>
+								</h2>
 
-							else :
+								<div class="btn">
+									Czytaj Wpis
+								</div>
 
-							    // no rows found
-
-							endif;
-
-							?>
-
+							</a>
+						<?php
+							}//end foreach
+						?>
 					</div>
 
 				</div>

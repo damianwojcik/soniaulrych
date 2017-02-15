@@ -34,13 +34,13 @@
 
 				<ul class="article-tiles">
 
-                <?php if ( have_posts() ) : ?>
+					<?php if ( have_posts() ) : ?>
 
-			    <?php while ( have_posts() ) : the_post();  ?>
+					<?php while ( have_posts() ) : the_post();  ?>
 
-			    <?php
+					<?php
 
-                    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+					$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
                     $title = get_the_title();
                     $day = get_the_date('d');
                     $month = get_the_date('M');
