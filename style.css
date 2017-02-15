@@ -795,6 +795,7 @@ header .container{
 }
 
 .owl-carousel .item__title{
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 45px;
