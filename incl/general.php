@@ -35,7 +35,6 @@
 
 		// load scripts
 		wp_enqueue_script("jquery");
-		wp_enqueue_script( 'owl_carousel', THEME_URL . '/assets/js/owl.carousel.min.js' );
-		wp_enqueue_script( 'site_scripts', THEME_URL . '/assets/js/scripts.js' );
+		wp_enqueue_script( 'site_scripts', THEME_URL . '/assets/js/scripts.min.js' );
 
 	}

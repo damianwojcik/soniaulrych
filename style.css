@@ -607,6 +607,7 @@ header .container{
     cursor: pointer;
     display: none;
     background: transparent;
+    margin-bottom: 22px;
 }
 
 #menu-toggle #menu-toggle-text{
