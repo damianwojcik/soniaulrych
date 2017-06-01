@@ -1551,3 +1551,10 @@ a.read-more:hover{
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+
+#tags h1 {
+    left: -1000em;
+    position: absolute;
+    font-size: 0;
+    margin: 0;
+}

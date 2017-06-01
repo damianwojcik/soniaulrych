@@ -74,6 +74,37 @@
 
 		</div>
 
+        <div id="tags">
+            <h1>fotograf tychy</h1>
+            <h1>fotograf katowice</h1>
+            <h1>fotografia ślubna</h1>
+            <h1>fotografia dziecięca</h1>
+            <h1>sesja</h1>
+            <h1>sesja ślubna</h1>
+            <h1>sesja ślubna tychy</h1>
+            <h1>sesja noworodkowa</h1>
+            <h1>sesja noworodkowa tychy</h1>
+            <h1>sesja narzeczeńska</h1>
+            <h1>sesja narzeczeńska tychy</h1>
+            <h1>sesja tychy</h1>
+            <h1>zdjęcia tychy</h1>
+            <h1>zdjęcia okolicznościowe</h1>
+            <h1>zdjęcia okolicznościowe tychy</h1>
+            <h1>zdjęcia reklamowe tychy</h1>
+            <h1>dron</h1>
+            <h1>dron tychy</h1>
+            <h1>fotografia dron</h1>
+            <h1>fotografia dron tychy</h1>
+            <h1>grafik tychy</h1>
+            <h1>grafik komputerowy tychy</h1>
+            <h1>projektowanie graficzne katowice</h1>
+            <h1>projektowanie graficzne tychy</h1>
+            <h1>grafika reklamowa</h1>
+            <h1>logo</h1>
+            <h1>projektowanie logo tychy</h1>
+            <h1>google</h1>
+        </div>
+
 	</footer>
 
 </div>
