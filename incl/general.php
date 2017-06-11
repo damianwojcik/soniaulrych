@@ -26,7 +26,10 @@
 	function enqueue_styles() {
 
 		// load styles
-		wp_enqueue_style( 'site_styles', THEME_URL .'/style.min.css' );
+        wp_enqueue_style( 'ubuntu_font', 'https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300&subset=latin-ext', '', NULL);
+        wp_enqueue_style( 'sourcesans_font', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600&subset=latin-ext', '', NULL);
+        wp_enqueue_style( 'oswald_font', 'https://fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin-ext', '', NULL);
+        wp_enqueue_style( 'site_styles', THEME_URL .'/style.min.css' );
 
 	}
 
