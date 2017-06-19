@@ -77,6 +77,7 @@
         <div id="tags">
             <h1>fotograf tychy</h1>
             <h1>fotograf katowice</h1>
+			<h1>fotograf ślub tychy</h1>	
             <h1>fotografia ślubna</h1>
             <h1>fotografia dziecięca</h1>
             <h1>sesja</h1>
