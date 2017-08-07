@@ -43,7 +43,7 @@
 
 				<div class="span12">
 
-					<h2 class="owl-carousel">
+					<div class="slider-carousel">
 
 						<?php $args = array(
 							'posts_per_page'   => 5,
@@ -92,17 +92,18 @@
 						<?php
 							}//end foreach
 						?>
-					</div>
+					</div> <!-- END slider-carousel -->
 
 				</div>
 				<!-- END span12 -->
 
-			</div>
+			</div><!-- END row -->
 
-		</div>
+		</div><!-- END container -->
 
-	</div>
-	<!-- END section-slider -->
+	</div><!-- END section-slider -->
+
+    </div><!-- END page--wrapper -->
 
 
 	<!-- =================================================
@@ -297,8 +298,59 @@
 
 	</div>
 
+    <!-- =================================================
+            section-testimonials
+    ================================================== -->
+    <?php if( have_rows('testimonial', 'option') ): ?>
 
+        <div class="section-testimonials">
 
+            <div class="container">
 
+                <div class="row">
+
+                    <div class="testimonials-carousel">
+
+                        <?php while( have_rows('testimonial', 'option') ): the_row();
+
+                            $content = get_sub_field('content');
+                            $photo = get_sub_field('photo');
+                            $author = get_sub_field('author');
+
+                            ?>
+
+                            <div class="item">
+
+                                <blockquote>
+
+                                    <p><?php echo $content; ?></p>
+                                    <div class="testimonials-footer">
+
+                                        <?php if($photo) { ?>
+
+                                            <img class="testimonial-image" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>">
+
+                                        <?php } ?>
+
+                                        <div class="testimonial-author">
+                                            <?php the_sub_field('author'); ?>
+                                        </div>
+                                     </div>
+
+                                </blockquote>
+
+                            </div><!-- END item -->
+
+                        <?php endwhile; ?>
+
+                    </div><!-- END testimonials-carousel -->
+
+                </div><!-- END row -->
+
+            </div><!-- END container -->
+
+        </div><!-- END section-testimonials -->
+
+    <?php endif; ?>
 
 <?php get_footer(); ?>
