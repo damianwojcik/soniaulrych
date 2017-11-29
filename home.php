@@ -53,7 +53,7 @@
 						$posts_array = get_posts( $args );
 
 						foreach ($posts_array as $post){
-							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+							$image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'medium_large');
 							$title = get_the_title();
 							$day = get_the_date('d');
 							$month = get_the_date('M');
@@ -317,7 +317,7 @@
                             $photo = get_sub_field('photo');
                             $author = get_sub_field('author');
 
-                            ?>
+                        ?>
 
                             <div class="item">
 
@@ -328,7 +328,7 @@
 
                                         <?php if($photo) { ?>
 
-                                            <img class="testimonial-image" src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>">
+                                            <img class="testimonial-image" src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>">
 
                                         <?php } ?>
 

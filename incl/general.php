@@ -3,7 +3,7 @@
   add_theme_support('menus');
 
   add_theme_support( 'post-thumbnails' );
-  set_post_thumbnail_size( 300, 300 );
+  set_post_thumbnail_size( 100, 100 );
 
   add_image_size ( article_tiles, 600, 600, false );
 

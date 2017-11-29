@@ -84,8 +84,8 @@ jQuery(document).ready(function($) {
         $('.testimonials-carousel').owlCarousel({
             items: 1,
             loop: true,
-            autoplay: false,
-            autoplayTimeout: 4000,
+            autoplay: true,
+            autoplayTimeout: 3000,
             autoplayHoverPause: true,
             nav: true,
 			dots: false,

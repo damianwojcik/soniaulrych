@@ -1,4 +1,4 @@
-<?php /* Template Name: Strona Dron */ ?>
+<?php /* Template Name: Strona Single */ ?>
 
 <?php get_header(); ?>
 
@@ -12,7 +12,11 @@
 
             	<?php 
             		$page_title = get_field('page_title');
-					$page_subtitle = get_field('page_subtitle');?>
+					$page_subtitle = get_field('page_subtitle');
+                    $button_txt = get_field('button_txt');
+                    $button_url = get_field('button_url');
+                    if( empty($button_url) ){ $button_url = '#'; }
+                ?>
 
             	<!-- standard page title (ACF) -->
             	<?php if( !empty($page_title) ): ?>
@@ -62,11 +66,15 @@
 
 				<?php } ?>
 
-				<div class="btn-wrapper">
+                <?php if( !empty($button_txt) ){ ?>
 
-					<a href="#" class="btn btn-large">Zobacz Galerie</a>
+                    <div class="btn-wrapper">
 
-				</div>
+                        <a href="<?php echo $button_url; ?>" class="btn btn-large"><?php echo $button_txt; ?></a>
+
+                    </div>
+
+                <?php } ?>
 			
 			</div>
 			<!-- END span6 -->

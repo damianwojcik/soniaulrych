@@ -119,22 +119,28 @@
 
 						<?php
 
-						$args = array( 'numberposts' => '7', 'category' => '7' );
-						$recent_posts = wp_get_recent_posts( $args );
+                            $args = array( 'numberposts' => '7', 'category' => '7' );
+                            $recent_posts = wp_get_recent_posts( $args );
 
 						?>
 
 						<ul>
 
-							<?php
+                            <?php
 
-								foreach( $recent_posts as $recent ){
-									echo '<li>';
-									echo '<span class="post-date">' . date('M d, o', strtotime($recent['post_date'])) . '</span>';
-									echo '<a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"] . '</a></li>';
-								}
+                                foreach( $recent_posts as $recent ){
 
-							?>
+                                    $dateformatstring = "d F Y";
+                                    $unixtimestamp = strtotime($recent['post_date']);
+
+                                    echo '<li>';
+                                    echo '<span class="post-date">';
+                                    echo date_i18n($dateformatstring, $unixtimestamp);
+                                    echo '</span>';
+                                    echo '<a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"] . '</a></li>';
+                                }
+
+                            ?>
 
 						</ul>
 

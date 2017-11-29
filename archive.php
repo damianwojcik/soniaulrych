@@ -128,8 +128,8 @@
 
 						<?php
 
-						$args = array( 'numberposts' => '7', 'category' => '7' );
-						$recent_posts = wp_get_recent_posts( $args );
+                            $args = array( 'numberposts' => '7', 'category' => '7' );
+                            $recent_posts = wp_get_recent_posts( $args );
 
 						?>
 
@@ -137,14 +137,15 @@
 
 							<?php
 
-							setlocale(LC_TIME, "");
-
 								foreach( $recent_posts as $recent ){
 
-									$date = strftime('%b %d %Y', strtotime($recent['post_date']));
+                                    $dateformatstring = "d F Y";
+                                    $unixtimestamp = strtotime($recent['post_date']);
 
 									echo '<li>';
-									echo '<span class="post-date">' . $date . '</span>';
+									echo '<span class="post-date">';
+                                    echo date_i18n($dateformatstring, $unixtimestamp);
+									echo '</span>';
 									echo '<a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"] . '</a></li>';
 								}
 
