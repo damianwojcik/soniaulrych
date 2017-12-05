@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
 	lazy_load();
 	owl_init();
 	mobile_menu();
+    initMap();
 
 
     //cookies pop-up
@@ -135,5 +136,28 @@ jQuery(document).ready(function($) {
 
 	}
 
+    //google map
+    function initMap() {
+
+        var mapElement = document.getElementById('map');
+
+        if (mapElement) {
+
+            var myLatLng = {lat: 50.119633, lng: 18.997483};
+
+            var map = new google.maps.Map(mapElement, {
+                zoom: 11,
+                center: myLatLng,
+                scrollwheel: false,
+                disableDoubleClickZoom: true
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Tu jestem!'
+            });
+        }
+    }
 
 });

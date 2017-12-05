@@ -1,22 +1,20 @@
 <?php
 
-  add_theme_support('menus');
+    add_theme_support('menus');
 
-  add_theme_support( 'post-thumbnails' );
-  set_post_thumbnail_size( 100, 100 );
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 100, 100 );
 
-  add_image_size ( article_tiles, 600, 600, false );
+    add_image_size ( article_tiles, 600, 600, false );
 
-  add_image_size ( huge, 2048, 2048, false );
+    add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
 
-  add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
+    add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+    add_action( 'wp_footer', 'enqueue_scripts' );
 
-  add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
-	add_action( 'wp_footer', 'enqueue_scripts' );
-
-  // Adds class to pagination links
-	add_filter('next_posts_link_attributes', 'posts_link_attributes');
-	add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+    // Adds class to pagination links
+    add_filter('next_posts_link_attributes', 'posts_link_attributes');
+    add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 
 	function posts_link_attributes() {
 	    return 'class="btn"';
@@ -38,6 +36,7 @@
 
 		// load scripts
 		wp_enqueue_script("jquery");
+        wp_enqueue_script( 'google_map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA9aVIw6lKrsfeN2MRIJEF8kqMKyIgf4AA' , '', NULL);
 		wp_enqueue_script( 'site_scripts', THEME_URL . '/assets/js/scripts.min.js' );
 
 	}

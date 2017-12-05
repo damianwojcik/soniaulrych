@@ -377,6 +377,17 @@
 		margin-bottom: 0;
 	}
 
+	.g-recaptcha {
+		transform: scale(0.77);
+		transform-origin:0 0;
+		max-width: 232px;
+	}
+
+	#rc-imageselect {
+		transform: scale(0.77);
+		transform-origin:0 0;
+	}
+
 }
 
 
