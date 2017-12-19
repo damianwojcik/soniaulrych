@@ -330,6 +330,10 @@
 
                                             <img class="testimonial-image" src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>">
 
+                                        <?php } else { ?>
+
+                                            <img class="testimonial-image" src="<?= THEME_URL; ?>/assets/images/placeholder.png" alt="Image Placeholder">
+
                                         <?php } ?>
 
                                         <div class="testimonial-author">

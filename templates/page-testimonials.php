@@ -66,7 +66,11 @@
 
                                 <?php if($photo) { ?>
 
-                                    <img class="b-lazy testimonial-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>">
+                                    <img class="testimonial-image" src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>">
+
+                                <?php } else { ?>
+
+                                    <img class="testimonial-image" src="<?= THEME_URL; ?>/assets/images/placeholder.png" alt="Image Placeholder">
 
                                 <?php } ?>
 
