@@ -425,6 +425,7 @@ input[type="submit"]:hover{
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    -webkit-appearance: none;
 }
 
 .btn:hover,
@@ -1263,6 +1264,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     font-size: 14px;
     line-height: 24px;
     color: #676767;
+    -webkit-appearance: none;
 }
 
 
