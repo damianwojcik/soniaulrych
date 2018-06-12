@@ -50,7 +50,7 @@
 
 					<?php if( $category_id == '6'  ) { ?>
 
-						<a href="<?= $image['sizes']['huge']; ?>" rel="lightbox">
+                            <a href="<?php echo $image['url']; ?>" rel="lightbox">
 
 			                <div class="category-item">
 
@@ -75,9 +75,9 @@
 			            </a>
 
 						<?php $i = $i + 1 ?>
-					<?php } else {?>
+					<?php } else { ?>
 
-					<a href="<?= $image['sizes']['huge']; ?>" rel="lightbox">
+					<a href="<?php echo $image['url']; ?>" rel="lightbox">
 
 			            <div class="gallery-item">
 
