@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
             autoplayHoverPause: true,
             nav: true,
 			dots: false,
-            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+            navText : ["&lt","&gt"],
             autoHeight: true
         });
     }
