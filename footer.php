@@ -64,7 +64,7 @@
 					<h4>Autor</h4>
 
 					<p class="copy">
-						Wykonał &#169; 2016 <a target="_blank" href="http://damianwojcik.it/">damianwojcik.IT</a><br/>
+						Wykonał &#169; 2016 <a target="_blank" href="http://dwojcik.pro/">dwojcik.pro</a><br/>
 					 	Wszelkie prawa zastrzeżone.
 					</p>
 
@@ -77,7 +77,7 @@
         <div id="tags">
             <h1>fotograf tychy</h1>
             <h1>fotograf katowice</h1>
-			<h1>fotograf ślub tychy</h1>	
+			<h1>fotograf ślub tychy</h1>
             <h1>fotografia ślubna</h1>
             <h1>fotografia dziecięca</h1>
             <h1>sesja</h1>
